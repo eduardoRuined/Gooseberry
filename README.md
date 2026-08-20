@@ -15,3 +15,14 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=#F03C2E)](https://git-scm.com/)
 
 </div>
+
+## Progreso del desarrollo
+
+### Semana 0 — Setup inicial 
+- Repositorio configurado con estructura backend/frontend
+- Flujo de Git con ramas por feature
+
+### Semana 1 — Fundamentos de Django 
+- Proyecto Django creado con app `music`
+- Django REST Framework configurado
+- Entorno virtual y `requirements.txt` documentado
