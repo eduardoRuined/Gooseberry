@@ -25,4 +25,10 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 ### Semana 1 — Fundamentos de Django 
 - Proyecto Django creado con app `music`
 - Django REST Framework configurado
-- Entorno virtual y `requirements.txt` documentado
+- Entorno virtual y `requirements.txt` documentado   
+
+### Semana 2 — Modelos y base de datos
+- Modelos Artist, Album, Song, Playlist y Favorite creadas con sus relaciones ForeignKey y ManyToMany
+- Creacion y configuración del SuperUsuario para el panel de Django
+- Migraciones aplicadas coorectamente sobre SQLite
+- Inserción de datos de prueba en Django Administration
