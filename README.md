@@ -37,3 +37,9 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Serializers, ViewSets y Router configurados para los 5 modelos
 - Endpoints CRUD funcionando: /api/songs/, /api/artists/, /api/albums/, /api/playlists/, /api/favorites/
 - Relaciones anidadas en SongSerializer para mostrar nombre de artista y album sin peticiones exta 
+
+### Semana 4 — Autenticación
+- JWT configurado con djangorestframework-simplejwt
+- Endpoints de registro y login funcionando
+- Permisos personalizados: solo el dueño de una playlist puede editarla o borrarla
+- Owner asignado automáticamente al crear playlists mediante perform_create
