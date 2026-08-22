@@ -32,3 +32,8 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Creacion y configuración del SuperUsuario para el panel de Django
 - Migraciones aplicadas coorectamente sobre SQLite
 - Inserción de datos de prueba en Django Administration
+
+### Semana 3 — API REST con Django REST Framework
+- Serializers, ViewSets y Router configurados para los 5 modelos
+- Endpoints CRUD funcionando: /api/songs/, /api/artists/, /api/albums/, /api/playlists/, /api/favorites/
+- Relaciones anidadas en SongSerializer para mostrar nombre de artista y album sin peticiones exta 
