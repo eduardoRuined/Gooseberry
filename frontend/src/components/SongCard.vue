@@ -1,9 +1,24 @@
 <script setup>
-    defineProps({title:{type:String,require:true},artistName:{type:String,require:true},coverUrl:{type:String,default:'' }})
+import { usePlayerStore } from '../stores/player';
+
+    const props= defineProps({
+        title: {type:String, required: true},
+        artistName:{type:String, required: true},
+        coverUrl:{type:String, default:''}
+    })
+    const player= usePlayerStore()
+
+    function handleClick(){
+        player.playSong({
+            title: props.title,
+            artistName:props.artistName,
+            coverUrl:props.coverUrl
+        })
+    }
 </script>
 
 <template>
-    <div class="song-card">
+    <div class="song-card" @click="handleClick">
         <img :src="coverUrl" alt="" class="cover"/>
         <div class="info">
             <p class="title">{{ title }}</p>

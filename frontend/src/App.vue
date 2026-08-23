@@ -1,27 +1,38 @@
 <script setup>
-  import SongCard from './components/SongCard.vue';
-  import AlbumCard from './components/AlbumCard.vue';
+import { RouterLink, RouterView } from 'vue-router';
+import PlayerBar from './components/PlayerBar.vue';
 </script>
 
 <template>
   <div id="app">
-    <h1>Gooseberry</h1>
-    <h2>Canciones</h2>
-    <SongCard title="For Honor! For Toussaint!" artistName="Marcin Przybylowicz"/>
-    <SongCard title="The Trial" artistName="Marcin Przybylowicz" />
-    <h2>Albumes</h2>
-    <AlbumCard title="The Witcher 3: The Wild Hunt(OST)" artistName="Marcin Przybylowicz"/>
+    <nav>
+      <RouterLink to="/">Inicio</RouterLink>
+      <RouterLink to="/search">Buscar</RouterLink>
+    </nav>
+    <main>
+      <RouterView/>
+    </main>
+    <PlayerBar/>
   </div>
 </template>
 
 <style>
   #app{
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 24px;
   }
-  h2{
-    margin: 24px 0 12px;
-    font-size: 18px;
+  nav{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  nav a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a.router-link-active{
+    color: #ffffff;
   }
 </style>
