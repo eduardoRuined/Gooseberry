@@ -43,3 +43,7 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Endpoints de registro y login funcionando
 - Permisos personalizados: solo el dueño de una playlist puede editarla o borrarla
 - Owner asignado automáticamente al crear playlists mediante perform_create
+### Semana 5 — Fundamentos de Vue 3
+- Proyecto Vue 3 + Vite inicializado en frontend/
+- Extensión Vue - Official configurada en VS Code
+- Componentes SongCard y AlbumCard creados con props tipadas
