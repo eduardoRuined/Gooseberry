@@ -47,3 +47,7 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Proyecto Vue 3 + Vite inicializado en frontend/
 - Extensión Vue - Official configurada en VS Code
 - Componentes SongCard y AlbumCard creados con props tipadas
+### Semana 6 — Ruteo y estado global
+- Vue Router configurado con rutas Home y Search
+- Store de Pinia(usePlayerStore) para el estado global del reproductor
+- PlayerBar conectando al store, persiste su estado al navegar entre vistas 
