@@ -2,17 +2,18 @@
 import { usePlayerStore } from '../stores/player';
 
     const props= defineProps({
-        title: {type:String, required: true},
-        artistName:{type:String, required: true},
-        coverUrl:{type:String, default:''}
-    })
+            title:{type:String, required:true}, 
+            artistName:{type:String,required:true},
+            coverUrl:{type:String, default:""},
+            audioUrl:{type:String, required:true}
+        })
     const player= usePlayerStore()
-
     function handleClick(){
         player.playSong({
-            title: props.title,
+            title:props.title,
             artistName:props.artistName,
-            coverUrl:props.coverUrl
+            coverUrl:props.coverUrl,
+            audioUrl:props.audioUrl
         })
     }
 </script>
