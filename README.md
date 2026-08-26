@@ -51,3 +51,9 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Vue Router configurado con rutas Home y Search
 - Store de Pinia(usePlayerStore) para el estado global del reproductor
 - PlayerBar conectando al store, persiste su estado al navegar entre vistas 
+ ### Semana 7 -- Conectando frontend y backend 
+ - CORS configurado para permitir peticiones desde Vue (localhost:5173) 
+ - Cliente Axios centralizado con interceptor de token JWT 
+ - Canciones reales cargadas desde la API en HomeView 
+ - Reproductor de audio funcional (play, pausa, barra de progreso, seek) sincronizado con el store de Pinia 
+ - Archivos de audio servidos correctamente en desarrollo via MEDIA_URL
