@@ -5,6 +5,8 @@
     const audioRef=ref(null)
     const currentTime=ref(0)
     const duration=ref(0)
+    const isSeeking= ref(false)
+
     watch(()=> player.currentSong,(newSong)=>{
         if(newSong && audioRef.value){
             audioRef.value.src=newSong.audioUrl
@@ -22,13 +24,25 @@
         }
     })
     function onTimeUpdate(){
+        if(isSeeking.value) return
         currentTime.value= audioRef.value.currentTime
         duration.value=audioRef.value.duration || 0 
     }
     function seek(event){
         const newTime= Number(event.target.value)
-        audioRef.value.currentTime=newTime
         currentTime.value=newTime
+    }
+    function seekEnd(event){
+        const newTime=Number(event.target.value)
+        audioRef.value.currentTime= newTime
+        console.log('duration:', audioRef.value.duration, '- readyState:', audioRef.value.readyState, '- seekable ranges:', audioRef.value.seekable.length) 
+        audioRef.value.currentTime= newTime 
+        console.log('Seek aplicado a:', newTime, '- Tiempo real del audio:', audioRef.value.currentTime)
+        isSeeking.value=false
+        
+    }
+    function seekStart(){
+        isSeeking.value=true
     }
     function formatTime(seconds) { 
         if (!seconds || isNaN(seconds)) 
@@ -53,7 +67,7 @@
             <button @click="player.togglePlay()">{{ player.isPlaying?'Pausar':'Reproducir'}}</button>
             <div class="progress">
                 <span>{{ formatTime(currentTime) }}</span>
-                <input type="range" min="0" :max="duration" :value="currentTime" @input="seek"/>
+                <input type="range" min="0" :max="duration" :value="currentTime" @mousedown="seekStart" @touchstart="seekStart" @input="seek" @change="seekEnd"/>
                 <span>{{ formatTime(duration) }}</span>
             </div>
         </div>

@@ -8,6 +8,8 @@ import PlayerBar from './components/PlayerBar.vue';
     <nav>
       <RouterLink to="/">Inicio</RouterLink>
       <RouterLink to="/search">Buscar</RouterLink>
+      <RouterLink to="/login">Iniciar sesión</RouterLink>
+      <RouterLink to="/playlists">Playlists</RouterLink>
     </nav>
     <main>
       <RouterView/>
