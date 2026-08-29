@@ -36,6 +36,7 @@ class FavoriteSerializer(serializers.ModelSerializer):
     class Meta:
         model=Favorite 
         fields = '__all__'
+        read_only_fields=['user']
 class RegisterSerializer(serializers.ModelSerializer):
     password= serializers.CharField(write_only=True,validators=[validate_password])
     class Meta:
