@@ -43,17 +43,27 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 - Endpoints de registro y login funcionando
 - Permisos personalizados: solo el dueño de una playlist puede editarla o borrarla
 - Owner asignado automáticamente al crear playlists mediante perform_create
+
 ### Semana 5 — Fundamentos de Vue 3
 - Proyecto Vue 3 + Vite inicializado en frontend/
 - Extensión Vue - Official configurada en VS Code
 - Componentes SongCard y AlbumCard creados con props tipadas
+
 ### Semana 6 — Ruteo y estado global
 - Vue Router configurado con rutas Home y Search
 - Store de Pinia(usePlayerStore) para el estado global del reproductor
 - PlayerBar conectando al store, persiste su estado al navegar entre vistas 
+
  ### Semana 7 -- Conectando frontend y backend 
  - CORS configurado para permitir peticiones desde Vue (localhost:5173) 
  - Cliente Axios centralizado con interceptor de token JWT 
  - Canciones reales cargadas desde la API en HomeView 
  - Reproductor de audio funcional (play, pausa, barra de progreso, seek) sincronizado con el store de Pinia 
  - Archivos de audio servidos correctamente en desarrollo via MEDIA_URL
+
+ ### Semana 8 -- Playlists, favoritos y busqueda 
+ - Login funcional desde el frontend con store de autenticacion (Pinia)
+ - CRUD de playlists: crear, listar y eliminar desde la interfaz 
+ - Sistema de favoritos con sincronizacion real entre frontend y backend (endpoint /favorites/check/)  
+ - Busqueda de canciones con debounce, usando SearchFilter de Django REST Framework 
+ - Resueltos varios bugs de sincronizacion de estado y permisos por usuario
