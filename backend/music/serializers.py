@@ -14,6 +14,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 class SongSerializer(serializers.ModelSerializer):
     artist_name=serializers.CharField(source='artist.name', read_only=True)
     album_title=serializers.CharField(source='album.title', read_only=True)
+    stream_url= serializers.SerializerMethodField()
     class Meta:
         model=Song 
         fields = [
@@ -24,9 +25,15 @@ class SongSerializer(serializers.ModelSerializer):
             'album',
             'album_title',
             'audio_file',
+            'stream_url',
             'duration_seconds',
             'track_number',
         ]
+    def get_stream_url(self, obj):
+        request=self.context.get('request')
+        url=f'/api/songs/{obj.id}/stream/'
+        return request.build_absolute_uri(url) if request else url
+    
 class PlaylistSerializer(serializers.ModelSerializer):
     class Meta:
         model=Playlist 
