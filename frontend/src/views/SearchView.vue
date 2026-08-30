@@ -39,7 +39,7 @@
             :song-id="song.id"
             :title="song.title"
             :artist-name="song.artist_name"
-            :audio-url="song.audio_file"/>
+            :audio-url="song.stream_url"/>
     </div>
 </template>
 

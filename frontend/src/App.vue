@@ -37,4 +37,13 @@ import PlayerBar from './components/PlayerBar.vue';
   nav a.router-link-active{
     color: #ffffff;
   }
+  @media(max-width: 640px){
+    #app{
+      padding: 12px;
+    }
+    nav{
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
 </style>

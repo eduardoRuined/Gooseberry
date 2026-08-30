@@ -41,7 +41,7 @@ function isFavorited(songId) {
             :song-id="song.id"
             :title="song.title" 
             :artist-name="song.artist_name"
-            :audio-url="song.audio_file"
+            :audio-url="song.stream_url"
             :is-favorite="isFavorited(song.id)"/>
     </div>
 </template>

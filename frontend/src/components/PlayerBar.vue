@@ -127,4 +127,15 @@
         flex: 1;
         accent-color: #1db954;
     }
+    @media(max-width: 640px){
+    .player-bar{
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+        align-items: stretch;
+    }
+    .controls{
+        margin-left: 0;
+    }
+  }
 </style>
