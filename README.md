@@ -67,3 +67,9 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
  - Sistema de favoritos con sincronizacion real entre frontend y backend (endpoint /favorites/check/)  
  - Busqueda de canciones con debounce, usando SearchFilter de Django REST Framework 
  - Resueltos varios bugs de sincronizacion de estado y permisos por usuario
+
+ ### Semana 9 -- Pulido tecnico
+ - HTTP Range requests implementado para streaming real de audio (permite avanzar/retroceder sin reiniciar la cancion)
+ -  Suite de tests automatizados con APITestCase: cobertura de endpoints publicos, busqueda, y permisos de playlists
+ - Diseno responsive para PlayerBar y navegacion en pantallas moviles   
+ - Tema oscuro fijo (por decision de diseno, sin alternador claro/oscuro)
