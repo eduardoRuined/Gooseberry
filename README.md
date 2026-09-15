@@ -18,58 +18,65 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
 
 ## Progreso del desarrollo
 
-### Semana 0 — Setup inicial 
+### Progreso 0 — Setup inicial 
 - Repositorio configurado con estructura backend/frontend
 - Flujo de Git con ramas por feature
 
-### Semana 1 — Fundamentos de Django 
+### Progreso 1 — Fundamentos de Django 
 - Proyecto Django creado con app `music`
 - Django REST Framework configurado
 - Entorno virtual y `requirements.txt` documentado   
 
-### Semana 2 — Modelos y base de datos
+### Progreso 2 — Modelos y base de datos
 - Modelos Artist, Album, Song, Playlist y Favorite creadas con sus relaciones ForeignKey y ManyToMany
 - Creacion y configuración del SuperUsuario para el panel de Django
 - Migraciones aplicadas coorectamente sobre SQLite
 - Inserción de datos de prueba en Django Administration
 
-### Semana 3 — API REST con Django REST Framework
+### Progreso 3 — API REST con Django REST Framework
 - Serializers, ViewSets y Router configurados para los 5 modelos
 - Endpoints CRUD funcionando: /api/songs/, /api/artists/, /api/albums/, /api/playlists/, /api/favorites/
 - Relaciones anidadas en SongSerializer para mostrar nombre de artista y album sin peticiones exta 
 
-### Semana 4 — Autenticación
+### Progreso 4 — Autenticación
 - JWT configurado con djangorestframework-simplejwt
 - Endpoints de registro y login funcionando
 - Permisos personalizados: solo el dueño de una playlist puede editarla o borrarla
 - Owner asignado automáticamente al crear playlists mediante perform_create
 
-### Semana 5 — Fundamentos de Vue 3
+### Progreso 5 — Fundamentos de Vue 3
 - Proyecto Vue 3 + Vite inicializado en frontend/
 - Extensión Vue - Official configurada en VS Code
 - Componentes SongCard y AlbumCard creados con props tipadas
 
-### Semana 6 — Ruteo y estado global
+### Progreso 6 — Ruteo y estado global
 - Vue Router configurado con rutas Home y Search
 - Store de Pinia(usePlayerStore) para el estado global del reproductor
 - PlayerBar conectando al store, persiste su estado al navegar entre vistas 
 
- ### Semana 7 -- Conectando frontend y backend 
+ ### Progreso 7 -- Conectando frontend y backend 
  - CORS configurado para permitir peticiones desde Vue (localhost:5173) 
  - Cliente Axios centralizado con interceptor de token JWT 
  - Canciones reales cargadas desde la API en HomeView 
  - Reproductor de audio funcional (play, pausa, barra de progreso, seek) sincronizado con el store de Pinia 
  - Archivos de audio servidos correctamente en desarrollo via MEDIA_URL
 
- ### Semana 8 -- Playlists, favoritos y busqueda 
+ ### Progreso 8 -- Playlists, favoritos y busqueda 
  - Login funcional desde el frontend con store de autenticacion (Pinia)
  - CRUD de playlists: crear, listar y eliminar desde la interfaz 
  - Sistema de favoritos con sincronizacion real entre frontend y backend (endpoint /favorites/check/)  
  - Busqueda de canciones con debounce, usando SearchFilter de Django REST Framework 
  - Resueltos varios bugs de sincronizacion de estado y permisos por usuario
 
- ### Semana 9 -- Pulido tecnico
+ ### Progreso 9 -- Pulido tecnico
  - HTTP Range requests implementado para streaming real de audio (permite avanzar/retroceder sin reiniciar la cancion)
  -  Suite de tests automatizados con APITestCase: cobertura de endpoints publicos, busqueda, y permisos de playlists
  - Diseno responsive para PlayerBar y navegacion en pantallas moviles   
  - Tema oscuro fijo (por decision de diseno, sin alternador claro/oscuro)
+
+ ## Fase 2 -- Identidad propia de Gooseberry 
+
+ ### Progreso 10 -- Identidad de marca
+ - Paleta de colores organica definida (lila, grosella, musgo, ambar)
+ - Tipografia seleccionada: Fraunces + Inter
+ - Documento BRAND.md creado como fuente de verdad visual
