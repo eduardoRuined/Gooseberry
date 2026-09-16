@@ -80,3 +80,9 @@ Proyecto personal — **Eduardo Hernández Contreras** — 2026
  - Paleta de colores organica definida (lila, grosella, musgo, ambar)
  - Tipografia seleccionada: Fraunces + Inter
  - Documento BRAND.md creado como fuente de verdad visual
+
+ ### Progreso 11 -- Implementar el sistema de diseño
+ - Variables CSS de marca aplicadas globalmente (lila, grosella, musgo, ambar, crema)
+ - Tipografia Fraunces + Inter integrada
+ - Todos los componentes migrados del esquema de color generico al de Gooseberry
+ - Ajuste de padding para evitar que PlayerBar tape contenido
