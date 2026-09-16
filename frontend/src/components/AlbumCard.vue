@@ -18,13 +18,13 @@
         cursor: pointer;
     }
     .album-card:hover{
-        background: #282828;
+        background: var(--bg-elevated);
     }
     .cover{
         width: 100%;
         aspect-ratio: 1;
         border-radius: 6px;
-        background: #333;
+        background: var(--bg-elevated);
         object-fit: cover;
         margin-bottom: 12px;
     }
@@ -32,9 +32,10 @@
         font-size: 14px;
         font-weight: 600;
         margin-bottom: 4px;
+        color: var(--cream);
     }
     .artist{
         font-size: 12px;
-        color: #b3b3b3;
+        color: var(--text-muted);
     }
 </style>

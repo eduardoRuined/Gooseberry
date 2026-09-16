@@ -23,6 +23,7 @@ import PlayerBar from './components/PlayerBar.vue';
     max-width: 900px;
     margin: 0 auto;
     padding: 24px;
+    padding-bottom: 100px;
   }
   nav{
     display: flex;
@@ -30,16 +31,18 @@ import PlayerBar from './components/PlayerBar.vue';
     margin-bottom: 24px;
   }
   nav a{
-    color: #b3b3b3;
+    color: var(--text-muted);
     text-decoration: none;
     font-weight: 600;
+    font-family: var(--font-body);
   }
   nav a.router-link-active{
-    color: #ffffff;
+    color: var(--berry);
   }
   @media(max-width: 640px){
     #app{
       padding: 12px;
+      padding-bottom: 100px;
     }
     nav{
       flex-wrap: wrap;

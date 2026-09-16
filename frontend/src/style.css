@@ -1,11 +1,24 @@
-* { 
-  box-sizing:border-box; 
+:root{
+  --lilac:#B4A0C4;
+  --berry:#7D3C5C;
+  --moss:#4C7A4F;
+  --amber: #D9A441;
+  --cream:#F2E9DC;
+  --bg-dark: #221D1A;
+  --bg-elevated:#2E2723;
+  --text-muted: #B8A99C;
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+}
+*{ box-sizing: border-box; 
   margin: 0; 
   padding: 0; 
 } 
-
 body { 
-  font-family: system-ui,sans-serif;
-  background: #121212; 
-  color: #ffffff; 
+  font-family: var(--font-body); 
+  background: var(--bg-dark); 
+  color: var(--cream); 
+}
+h1, h2, h3 { 
+  font-family: var(--font-heading); 
 }

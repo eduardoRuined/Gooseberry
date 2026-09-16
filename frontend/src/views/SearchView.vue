@@ -48,9 +48,10 @@
         width: 100%;
         padding: 12px;
         border-radius: 4px;
-        border: 1px solid #333;
-        background: #121212;
-        color: #fff;
+        border: 1px solid var(--bg-elevated);
+        background: var(--bg-dark);
+        color: var(--cream);
+        font-family: var(--font-body);
         margin: 16px 0 24px;
         box-sizing: border-box;
     }

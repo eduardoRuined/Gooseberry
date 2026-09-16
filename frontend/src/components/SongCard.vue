@@ -70,32 +70,33 @@ import api from '../services/api';
         justify-content: space-between;
     }
     .song-card:hover{
-        background: #282828;
+        background: var(--bg-elevated);
     }
     .cover{
         width: 48px;
         height: 48px;
         border-radius: 4px;
-        background: #333;
+        background: var(--bg-elevated);
         object-fit: cover;
     }
     .title{
         font-size: 14px;
         font-weight: 500;
+        color: var(--cream);
     }
     .artist{
         font-size: 12px;
-        color: #b3b3b3;
+        color: var(--text-muted);
     }
     .favorite-btn{
         background: none;
         border: none;
-        color: #b3b3b3;
+        color: var(--text-muted);
         font-size: 20px;
         cursor: pointer;
         padding: 4px 8px;
     }
     .favorite-btn:hover{
-        color: #1db954;
+        color: var(--lilac);
     }
 </style>

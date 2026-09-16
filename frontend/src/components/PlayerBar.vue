@@ -80,8 +80,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: #181818;
-        border-top: 1px solid #282828;
+        background: var(--bg-elevated);
+        border-top: 1px solid var(--berry);
         padding: 16px 24px;
         display: flex;
         align-items: center;
@@ -90,18 +90,19 @@
     .title{
         font-size: 14px;
         font-weight: 600;
+        color: var(--cream);
     }
     .artist{
         font-size: 12px;
-        color: #b3b3b3;
+        color: var(--text-muted);
     }
     .empty{
-        color: #b3b3b3;
+        color: var(--text-muted);
         font-size: 14px;
     }
     button{
-        background: #1db954;
-        color: #000;
+        background: var(--berry);
+        color: var(--cream);
         border: none;
         border-radius: 20px;
         padding: 8px 20px;
@@ -121,11 +122,11 @@
         gap: 8px;
         flex: 1;
         font-size: 12px;
-        color: #b3b3b3;
+        color: var(--text-muted);
     }
     .progress input[type='range']{
         flex: 1;
-        accent-color: #1db954;
+        accent-color: var(--amber);
     }
     @media(max-width: 640px){
     .player-bar{
